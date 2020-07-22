@@ -11,14 +11,13 @@ import { AppComponent } from './app.component';
     B2cStorefrontModule.withConfig({
       backend: {
         occ: {
-          baseUrl: 'https://spartacus-dev0.eastus.cloudapp.azure.com:9002',
-          prefix: '/occ/v2/',
+          baseUrl:
+            'https://api.c39j2-walkersde1-d4-public.model-t.cc.commerce.ondemand.com',
+          prefix: '/rest/v2/',
         },
       },
       context: {
         baseSite: ['electronics-spa'],
-        currency: ['USD'],
-        language: ['en'],
       },
       i18n: {
         resources: translations,
@@ -29,6 +28,18 @@ import { AppComponent } from './app.component';
         level: '2.0',
       },
     }),
+
+    // BootcampComponentModule,
+
+    // BootcampMultiSiteModule,
+
+    // BootcampIconModule,
+
+    // BootcampRoutingModule,
+
+    // ExternalRoutingModule,
+
+    // BootCampWishListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
